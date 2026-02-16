@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <title>Joseph H. Beyer — Resume</title>
+  <style>
+    :root {
+      --bg: #0f1419;
+      --surface: #1a2332;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --accent: #58a6ff;
+      --border: #30363d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    h1 { font-size: 1.75rem; margin: 0 0 0.5rem; }
+    h2 { font-size: 1.15rem; color: var(--accent); margin: 1.5rem 0 0.5rem; border-bottom: 1px solid var(--border); padding-bottom: 0.25rem; }
+    .profile { margin-bottom: 1.5rem; }
+    .profile-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    .profile-info { flex: 1; min-width: 0; }
+    .profile .contact { color: var(--muted); font-size: 0.9rem; }
+    .profile .contact a { color: var(--accent); text-decoration: none; }
+    .profile .contact a:hover { text-decoration: underline; }
+    .profile-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+      border: 3px solid var(--border);
+    }
+    ul { padding-left: 1.25rem; margin: 0.25rem 0; }
+    .section ul { margin: 0.5rem 0; }
+    .job { margin: 1rem 0; padding: 0.75rem; background: var(--surface); border-radius: 8px; border: 1px solid var(--border); }
+    .job .company { font-weight: 600; color: var(--accent); }
+    .job .role, .job .date { color: var(--muted); font-size: 0.9rem; }
+    .job .tech { font-size: 0.85rem; color: var(--muted); margin-top: 0.25rem; }
+    .project { margin: 0.5rem 0; padding-left: 0.5rem; border-left: 2px solid var(--border); }
+    .project .name { font-weight: 600; }
+    .qa-box {
+      margin: 0 0 1rem;
+      padding: 0.5rem 0.75rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem 0.75rem;
+    }
+    .qa-box h2 { margin: 0; font-size: 1rem; border: none; padding: 0; flex: 0 0 auto; }
+    .qa-box p { color: var(--muted); font-size: 0.8rem; margin: 0; flex: 0 0 auto; }
+    .qa-box .qa-form { display: flex; gap: 0.5rem; flex: 1 1 200px; min-width: 0; align-items: center; }
+    #ask-input {
+      flex: 1;
+      min-width: 0;
+      padding: 0.4rem 0.6rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      color: var(--text);
+      font-size: 0.9rem;
+    }
+    #ask-input:focus { outline: none; border-color: var(--accent); }
+    #ask-btn {
+      padding: 0.4rem 0.75rem;
+      background: var(--accent);
+      color: var(--bg);
+      border: none;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+    #ask-btn:hover { opacity: 0.9; }
+    #ask-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+    #answer { margin-top: 0.25rem; padding: 0.5rem 0.6rem; background: var(--bg); border-radius: 4px; white-space: pre-wrap; min-height: 1.5rem; font-size: 0.9rem; flex-basis: 100%; }
+    #answer.loading { color: var(--muted); }
+    #answer.error { color: #f85149; }
+    .achievement-category { margin: 0.75rem 0; }
+    .achievement-category .cat-name { font-weight: 600; color: var(--accent); }
+    .tech-category { margin: 0.5rem 0; }
+    .tech-category .cat-name { font-weight: 600; color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <div id="resume"></div>
+  <div class="qa-box">
+    <h2>Ask a question</h2>
+    <p>Ask anything about Joseph's experience, skills, or career. Answers use his full resume and common sense.</p>
+    <div class="qa-form">
+      <input type="text" id="ask-input" placeholder="e.g. What government projects has he worked on?" />
+      <button type="button" id="ask-btn">Ask</button>
+    </div>
+    <div id="answer"></div>
+  </div>
+  <div id="resume-rest"></div>
+  <script>
+    const resumeEl = document.getElementById('resume');
+    const resumeRestEl = document.getElementById('resume-rest');
+    const askInput = document.getElementById('ask-input');
+    const askBtn = document.getElementById('ask-btn');
+    const answerEl = document.getElementById('answer');
+
+    function renderList(items) {
+      if (!items || !items.length) return '';
+      return '<ul>' + items.map(i => '<li>' + (typeof i === 'string' ? i : i.join ? i.join(', ') : JSON.stringify(i)) + '</li>').join('') + '</ul>';
+    }
+
+    function renderResume(data) {
+      const p = data.profile || {};
+      const s = data.summary || {};
+      const ts = data.technical_summary || {};
+      const achievements = data.key_achievements || [];
+      const education = data.education || [];
+      const jobs = data.professional_experience || [];
+      const training = data.additional_training_education || [];
+
+      let html = '<div class="profile"><div class="profile-header">';
+      html += '<div class="profile-info">';
+      html += '<h1>' + (p.name || '') + '</h1>';
+      html += '<div class="contact">';
+      if (p.address) html += p.address + ' &middot; ';
+      if (p.email) html += '<a href="mailto:' + p.email + '">' + p.email + '</a> &middot; ';
+      if (p.phone) html += p.phone + ' &middot; ';
+      if (p.linkedin) html += '<a href="https://' + p.linkedin + '" target="_blank" rel="noopener">LinkedIn</a>';
+      html += ' &middot; <a href="/images/Joseph%20Beyer%20Resume.pdf" download="Joseph Beyer Resume.pdf">Joseph Beyer Resume.pdf</a>';
+      html += '</div></div>';
+      html += '<img src="/images/JoeProfileLinkedIn.jpg" alt="Joseph Beyer" class="profile-photo">';
+      html += '</div></div>';
+      resumeEl.innerHTML = html;
+
+      html = '';
+      html += '<h2>Summary</h2><div class="section">';
+      if (s.technical_skills_experience && s.technical_skills_experience.length) html += renderList(s.technical_skills_experience);
+      if (s.next_great_challenge) html += '<p><strong>Next great challenge:</strong> ' + s.next_great_challenge + '</p>';
+      if (s.key_strengths && s.key_strengths.length) html += '<p><strong>Key strengths:</strong></p>' + renderList(s.key_strengths);
+      if (s.hobbies && s.hobbies.length) html += '<p><strong>Hobbies:</strong> ' + s.hobbies.join(', ') + '</p>';
+      html += '</div>';
+
+      if (Object.keys(ts).length) {
+        html += '<h2>Technical summary</h2><div class="section">';
+        for (const [cat, items] of Object.entries(ts)) {
+          if (items && items.length) html += '<div class="tech-category"><span class="cat-name">' + cat.replace(/_/g, ' ') + ':</span>' + renderList(items) + '</div>';
+        }
+        html += '</div>';
+      }
+
+      if (achievements.length) {
+        html += '<h2>Key achievements</h2><div class="section">';
+        achievements.forEach(a => {
+          html += '<div class="achievement-category"><span class="cat-name">' + (a.category || '') + '</span>' + renderList(a.achievements || []) + '</div>';
+        });
+        html += '</div>';
+      }
+
+      html += '<h2>Education</h2><div class="section">';
+      education.forEach(ed => {
+        html += '<p><strong>' + (ed.degree || '') + '</strong>, ' + (ed.school || '') + ' &mdash; ' + (ed.date || '') + (ed.gpa ? ' ' + ed.gpa : '') + (ed.notes ? ' ' + ed.notes : '') + '</p>';
+      });
+      html += '</div>';
+
+      html += '<h2>Professional experience</h2><div class="section">';
+      jobs.forEach(job => {
+        html += '<div class="job">';
+        html += '<div class="company">' + (job.company || '') + '</div>';
+        html += '<div class="role">' + (job.role || job.title || '') + ' &mdash; ' + (job.date || '') + '</div>';
+        if (job.tech && job.tech.length) html += '<div class="tech">' + job.tech.join(', ') + '</div>';
+        if (job.tasks && job.tasks.length) html += renderList(job.tasks);
+        if (job.projects && job.projects.length) {
+          job.projects.forEach(proj => {
+            html += '<div class="project"><span class="name">' + (proj.name || '') + '</span>: ' + (proj.description || '') + '</div>';
+          });
+        }
+        html += '</div>';
+      });
+      html += '</div>';
+
+      if (training && training.length) {
+        html += '<h2>Additional training</h2><div class="section">' + renderList(training) + '</div>';
+      }
+
+      resumeRestEl.innerHTML = html;
+    }
+
+    fetch('/api/resume')
+      .then(r => r.json())
+      .then(renderResume)
+      .catch(() => { resumeEl.innerHTML = '<p>Could not load resume.</p>'; resumeRestEl.innerHTML = ''; });
+
+    askBtn.addEventListener('click', function () {
+      const q = askInput.value.trim();
+      if (!q) return;
+      answerEl.textContent = 'Thinking...';
+      answerEl.className = 'loading';
+      answerEl.classList.remove('error');
+      askBtn.disabled = true;
+      fetch('/api/ask', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ question: q })
+      })
+        .then(r => r.json().then(data => ({ ok: r.ok, data })))
+        .then(({ ok, data }) => {
+          if (ok) {
+            answerEl.textContent = data.answer || '';
+            answerEl.className = '';
+          } else {
+            answerEl.textContent = data.detail || 'Something went wrong.';
+            answerEl.className = 'error';
+          }
+        })
+        .catch(() => {
+          answerEl.textContent = 'Network or server error. Is the server running and GOOGLE_API_KEY (Gemini) set?';
+          answerEl.className = 'error';
+        })
+        .finally(() => { askBtn.disabled = false; });
+    });
+    askInput.addEventListener('keydown', function (e) { if (e.key === 'Enter') askBtn.click(); });
+  </script>
+</body>
+</html>

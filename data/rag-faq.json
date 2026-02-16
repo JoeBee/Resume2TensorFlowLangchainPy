@@ -1,0 +1,297 @@
+{
+  "description": "Common resume and career Q&A for RAG. Used together with resume-full.json when the user clicks Ask.",
+  "qa": [
+    {
+      "question": "Walk me through your resume. Tell me about yourself.",
+      "answer": "Joseph Beyer is a senior software engineer with 30+ years of experience in web development, IT, and communication. He is currently a contractor at Hi Marine Company (remote), building Angular applications with Material Design and MarineTraffic.com API integration. Before that he spent over 11 years at the U.S. Dept. of Transportation as a senior software engineer and subcontractor, working on projects for UK Ministry of Defence, US Air Mobility Command, NHTSA Crash Data Acquisition Network (CDAN), and Police Accident Reports (PARs) automation. His background includes roles at The CCS Companies, John Hancock Financial, Virtual Research Associates, Fidelity, and earlier positions at Gillette, Phase Forward, and others. He holds an M.S. in Scientific Computing from UMass Lowell (3.6 GPA) and a B.A. in Mathematics from Boston University (Dean's List). He is proficient in Angular, JavaScript, TypeScript, C#, and many Microsoft and web technologies, and his next great challenge is becoming proficient coding with artificial intelligence (AI)."
+    },
+    {
+      "question": "How many years of experience do you have? How long have you been in software?",
+      "answer": "Joseph has 30+ years of professional experience in web development, IT, and communication. He has worked in fast-paced and diverse environments including startups, blue-chip companies, and government, and has successfully delivered solutions across that entire span."
+    },
+    {
+      "question": "What are your key strengths? Greatest strengths?",
+      "answer": "Joseph's key strengths include: excellent planning, communication, and interpersonal skills; strong ability to manage multiple tasks and adapt to changing needs; and a proven track record of delivering solutions in fast-paced, diverse environments. He is also proficient in web technologies (Angular, JavaScript, TypeScript, etc.) and software development tools (Visual Studio, VSCode/Cursor, Git)."
+    },
+    {
+      "question": "What are your technical skills? What technologies do you know?",
+      "answer": "Joseph's technical skills include: Angular v1.9/AngularJS, JavaScript, jQuery, TypeScript, C#, HTML, CSS, T-SQL, VB.NET/VBScript/VBA, ASP/ASP.NET Web API/RESTful services, Material Design, UI Path, Git, and Azure. He uses many web development tools, Visual Studio, VSCode, Team Foundation Server (TFS), SQL Server, and is proficient in numerous Microsoft and Windows products."
+    },
+    {
+      "question": "What is your education? Where did you go to school? What degree do you have?",
+      "answer": "Joseph holds a Master of Science in Scientific Computing from the University of Massachusetts at Lowell (January 1993), graduating with a 3.6/4.0 GPA. He also has a Bachelor of Arts in Mathematics from Boston University (June 1991), where he was on the Dean's List from 1990 to 1991."
+    },
+    {
+      "question": "What is your current role? What do you do now? Current job?",
+      "answer": "Joseph is currently a contractor at Hi Marine Company (remote), where he develops a web-based Angular application with Material Design components, integrating the MarineTraffic.com API so users can manage ships and fleets. He uses Angular v1.9, TypeScript, Material Design, JavaScript, and GitHub."
+    },
+    {
+      "question": "What is your next great challenge? Career goals? What do you want to do next?",
+      "answer": "Joseph's next great challenge is becoming proficient at coding using artificial intelligence (AI). He is focused on growing in that area while continuing to deliver strong results in web and software development."
+    },
+    {
+      "question": "What certifications do you have? Microsoft certifications?",
+      "answer": "Joseph holds Microsoft Certified Professional 2.0 (MCP), Microsoft Certified Application Developer (MCAD), Microsoft Certified Technology Specialist (MCTS), and Microsoft Certified Professional Developer (MCPD). He has passed Microsoft exams 70-315, 70-316, 70-320, 70-528, 70-536, and 70-547. He also completed training in Long Term Care Insurance (LTC Basics, Financing Long-Term Care Needs, and Product/Policy Design, Pricing, and Regulation)."
+    },
+    {
+      "question": "Do you have experience with Angular? TypeScript? C#? JavaScript?",
+      "answer": "Yes. Joseph has extensive experience with Angular (v1.9/AngularJS), TypeScript, JavaScript, jQuery, and C#. He has used them at Hi Marine (Angular, TypeScript, Material Design, JavaScript), at U.S. Dept. of Transportation (Angular v1.8, TypeScript, JavaScript, C#), and in earlier roles. He also uses VB.NET, ASP.NET, T-SQL, Git, Azure DevOps, and many related tools."
+    },
+    {
+      "question": "Where have you worked? Work history? Previous employers?",
+      "answer": "Joseph has worked at: Hi Marine Company (2025–present), U.S. Dept. of Transportation (2013–2025), The CCS Companies (2009–2013), John Hancock Financial (2005–2009), Virtual Research Associates (2007/2008), OneSource, Fidelity Investments, Surebridge, Systems Engineering Inc., Optasite, Cahners/eLogic, Phase Forward, The Gillette Company, The Boston Globe, Boston College High School, and Process Design Sciences. He has experience in government, finance, insurance, defense, and product companies."
+    },
+    {
+      "question": "What did you do at the U.S. Dept of Transportation? DOT experience?",
+      "answer": "At the U.S. Dept. of Transportation (October 2013 – January 2025) Joseph worked as a senior software engineer and subcontractor. He developed applications for the UK Ministry of Defence (defense data), US Air Mobility Command (cargo data reading, parsing, storage), NHTSA Crash Data Acquisition Network (CDAN) and the Crash Investigation Sampling System (CISS), and built UI Path applications to download, scan, and process Police Accident Reports (PARs). He used Angular v1.8, TypeScript, JavaScript, C#, Visual Studio, UI Path, Git, and Azure DevOps."
+    },
+    {
+      "question": "What are your hobbies? Interests outside work?",
+      "answer": "Joseph's hobbies include astronomy, speed chess with friends and family, former (multi-)marathon running, and pickleball."
+    },
+    {
+      "question": "How can I contact Joseph? Email? Phone? LinkedIn? Contact information?",
+      "answer": "Joseph can be reached by email at Joe@bcjj.com, by phone at 978.273.0215, and on LinkedIn at www.linkedin.com/in/joseph-beyer-6148171. He is based in the Boston Area, MA."
+    },
+    {
+      "question": "How old is Joe? How old is Joseph? What is Joseph Beyer's age? Birth date? When was he born?",
+      "answer": "Joseph's resume does not include his age or birth date. He prefers to let his 30+ years of professional experience and his current work (including AI-focused development) speak to his expertise. You can ask about his experience, skills, education, or career goals instead."
+    },
+    {
+      "question": "What are you looking for? Why are you looking? Why leave current role?",
+      "answer": "Joseph's resume states his next great challenge is becoming proficient at coding using artificial intelligence (AI). Specific job-search or compensation details are not on the resume; for those topics, reaching out to him directly (Joe@bcjj.com or LinkedIn) is best."
+    },
+    {
+      "question": "Salary expectations? What salary? Compensation? Pay?",
+      "answer": "Salary and compensation are not addressed on Joseph's resume. For compensation or role-specific questions, contact him directly at Joe@bcjj.com or via LinkedIn (www.linkedin.com/in/joseph-beyer-6148171)."
+    },
+    {
+      "question": "How do you stay current with technology? Do you adapt to new tech?",
+      "answer": "Joseph has a proven track record of delivering in diverse, fast-paced environments and has worked across many technologies over 30+ years—from early web and desktop tools to Angular, TypeScript, cloud, and automation (e.g., UI Path, Azure). His next great challenge is becoming proficient with AI-assisted coding, which reflects his focus on staying current."
+    },
+    {
+      "question": "Experience with AI? Artificial intelligence? Machine learning?",
+      "answer": "Joseph's stated next great challenge is becoming proficient at coding using artificial intelligence (AI). His resume emphasizes his experience with modern development tools and his ability to deliver in changing technical environments, positioning him to grow in AI-assisted development."
+    },
+    {
+      "question": "Tell me about your experience at John Hancock. John Hancock Financial?",
+      "answer": "At John Hancock Financial (April 2005 – November 2009) Joseph was a Software Developer. He coded mathematical and actuarial models to generate and present Long Term Care insurance rates, using C#, VB6/VB.NET, ASP.NET, ADO.NET, Adobe PDF, web services, T-SQL/SQL Server, Visual Studio, Data Dynamics ActiveReports, CSS, XML, Active-X, and COM."
+    },
+    {
+      "question": "Tell me about NHTSA. Crash data? CDAN? CISS?",
+      "answer": "Joseph worked on the NHTSA Crash Data Acquisition Network (CDAN) at the U.S. Dept. of Transportation. He developed a web-based data collection application that collects data for NHTSA's Crash Data Acquisition Network. The new Crash Investigation Sampling System (CISS) can replace the National Automotive Sampling System (NASS)."
+    },
+    {
+      "question": "Tell me about UK Ministry of Defence. UK MOD? Defense projects?",
+      "answer": "At the U.S. Dept. of Transportation, Joseph worked on a project for the UK Ministry of Defence (UK MOD), developing applications for defense data."
+    },
+    {
+      "question": "What tools do you use? IDE? Version control?",
+      "answer": "Joseph uses Visual Studio, VSCode/Cursor, Git, Team Foundation Server (TFS), SQL Server, Azure, and Azure DevOps. He has also used UI Path for automation, and many Microsoft and web development tools."
+    },
+    {
+      "question": "What was your GPA? Grades? Dean's list?",
+      "answer": "Joseph graduated with a 3.6/4.0 GPA from the University of Massachusetts at Lowell (M.S. in Scientific Computing). He was on the Dean's List from 1990 to 1991 at Boston University (B.A. in Mathematics)."
+    },
+    {
+      "question": "Do you have government experience? Federal experience?",
+      "answer": "Yes. Joseph spent over 11 years at the U.S. Dept. of Transportation (October 2013 – January 2025), working on projects for NHTSA (crash data), US Air Mobility Command (cargo data), UK Ministry of Defence (defense data), and Police Accident Reports (PARs) automation. He also worked on a data entry and reporting application for the Massachusetts Dept. of Mental Retardation (DMR) at Systems Engineering Inc."
+    },
+    {
+      "question": "Do you work remotely? Remote work? Location?",
+      "answer": "Joseph's current role at Hi Marine Company is remote. He is based in the Boston Area, MA, and has worked at organizations in the Greater Boston area and beyond, including government sites in Cambridge, MA."
+    },
+    {
+      "question": "Tell me about your project experience. Major projects?",
+      "answer": "Joseph's major projects include: UK Ministry of Defence (defense data applications), US Air Mobility Command (cargo data application), NHTSA CDAN/CISS (crash data collection), Police Accident Reports/PARs (UI Path automation to download, scan, and process PARs), and at Hi Marine—a web-based Angular app with MarineTraffic.com API for ship and fleet management. He has also built actuarial and LTC insurance systems at John Hancock and data/telephony applications at The CCS Companies."
+    },
+    {
+      "question": "Resume gap? Employment gap? Time between jobs?",
+      "answer": "Joseph's resume shows continuous professional experience from the 1990s to the present, with overlapping or back-to-back roles (e.g., part-time at Virtual Research Associates while at John Hancock, and at The Boston Globe while at Gillette). There is no significant unexplained employment gap listed."
+    },
+    {
+      "question": "What is your greatest achievement? Biggest accomplishment?",
+      "answer": "Joseph's resume highlights a proven track record of delivering solutions in fast-paced, diverse environments (startups, blue-chip companies, government). Notable work includes applications for UK Ministry of Defence, NHTSA crash data (CISS), US Air Mobility Command cargo data, and UI Path automation for Police Accident Reports, plus actuarial/LTC systems at John Hancock and ship/fleet management at Hi Marine. His next great challenge is becoming proficient with AI-assisted coding."
+    },
+    {
+      "question": "Why do you want to work here? Why this company?",
+      "answer": "Joseph's resume does not mention specific companies or 'why this company.' His next great challenge is becoming proficient with AI, and his experience and skills are summarized in his resume and contact details. For role-specific or company-specific questions, contact him at Joe@bcjj.com or LinkedIn."
+    },
+    {
+      "question": "What are your weaknesses? Biggest weakness?",
+      "answer": "Joseph's resume does not include a discussion of weaknesses. It emphasizes his key strengths, technical skills, and next great challenge (AI). For a conversation about growth areas or fit, contact him directly (Joe@bcjj.com or LinkedIn)."
+    },
+    {
+      "question": "Tell me about The CCS Companies. CCS experience?",
+      "answer": "At The CCS Companies (December 2009 – October 2013) in Norwood, MA, Joseph was a Senior Programmer/Analyst. He built applications to email users and parse/analyze bounce-back data, did data cleansing for phone-dialing, and developed a web app with a third-party plugin so agents could click phone numbers and dial customers. He used C#, VB6/VB.NET, web services, Windows applications, T-SQL/SQL Server, Visual Studio, XML, COM Interop, LINQ, and Entity Framework."
+    },
+    {
+      "question": "Tell me about Hi Marine. Current company? MarineTraffic?",
+      "answer": "Joseph is currently a contractor at Hi Marine Company (remote). He developed a web-based Angular application with Material Design components that integrates the MarineTraffic.com API so users can manage ships and fleets. He uses Angular v1.9, TypeScript, Material Design, JavaScript, and GitHub."
+    },
+    {
+      "question": "UI Path experience? RPA? Automation?",
+      "answer": "Yes. At the U.S. Dept. of Transportation, Joseph built UI Path application(s) to download and scan Police Accident Reports (PARs), scraping and digitizing them and uploading to servers for analysis. He used UI Path alongside Angular, TypeScript, C#, Git, and Azure DevOps."
+    },
+    {
+      "question": "SQL Server? T-SQL? Database experience?",
+      "answer": "Yes. Joseph has used T-SQL and SQL Server across many roles, including at the U.S. Dept. of Transportation, The CCS Companies, John Hancock, Virtual Research Associates, OneSource, Fidelity, Surebridge, and others. He has built data collection, reporting, and backend systems with SQL Server."
+    },
+    {
+      "question": "Azure? Cloud experience? DevOps?",
+      "answer": "Joseph has used Azure and Azure DevOps at the U.S. Dept. of Transportation. His technical summary also lists Azure among his tools, and he has experience with web APIs, Git, and modern development and deployment workflows."
+    },
+    {
+      "question": "Why should we hire you? Why hire you?",
+      "answer": "Joseph brings 30+ years of proven experience delivering solutions in fast-paced, diverse environments—startups, blue-chip companies, and government. His strengths include excellent planning, communication, and interpersonal skills; strong ability to manage multiple tasks and adapt to changing needs; and deep proficiency in Angular, JavaScript, TypeScript, C#, and modern web technologies. He has delivered complex systems for UK Ministry of Defence, NHTSA crash data, US Air Mobility Command, and automated Police Accident Reports. His next focus is growing in AI-assisted development, which aligns with where the industry is heading."
+    },
+    {
+      "question": "How do you handle working under pressure? Working under pressure?",
+      "answer": "Joseph has a proven track record of delivering in fast-paced, diverse environments and has strong planning and communication skills. He has worked across government (DOT), finance (John Hancock, Fidelity), and product companies, delivering time-sensitive projects such as NHTSA crash data collection, UK MOD applications, and LTC insurance systems. His ability to manage multiple tasks and adapt to changing needs speaks to his resilience under pressure. For specific examples, contact him at Joe@bcjj.com or LinkedIn."
+    },
+    {
+      "question": "What do you know about our company? Know about our company?",
+      "answer": "Joseph's resume does not mention specific target companies. His experience spans government, finance, insurance, defense, and product firms. For company-specific questions or to discuss fit, reach out to him at Joe@bcjj.com or LinkedIn."
+    },
+    {
+      "question": "Tell me about a conflict with a coworker. Conflict with coworker? How did you resolve it?",
+      "answer": "Joseph's resume emphasizes excellent communication and interpersonal skills, and a proven track record in diverse team environments at DOT, John Hancock, CCS, and others. Specific conflict examples are not on the resume. For behavioral questions like this, contact him directly at Joe@bcjj.com or LinkedIn to discuss in an interview."
+    },
+    {
+      "question": "What accomplishment are you most proud of? Most proud of?",
+      "answer": "Joseph's resume highlights several notable accomplishments: applications for UK Ministry of Defence, NHTSA crash data (CISS) replacing NASS, US Air Mobility Command cargo data, UI Path automation for Police Accident Reports, actuarial and LTC insurance systems at John Hancock, ship/fleet management at Hi Marine, and a proven track record of delivering in startups, blue-chip companies, and government. His next great challenge is becoming proficient with AI-assisted coding."
+    },
+    {
+      "question": "How do you handle feedback or criticism? Handle feedback?",
+      "answer": "Joseph's resume stresses excellent communication and interpersonal skills, strong adaptability to changing needs, and 30+ years of delivering in diverse team environments. Specific examples of handling feedback are not on the resume. For behavioral examples, contact him at Joe@bcjj.com or LinkedIn."
+    },
+    {
+      "question": "What motivates you at work? Motivates you?",
+      "answer": "Joseph's resume states his next great challenge is becoming proficient at coding using AI. His career shows sustained motivation: delivering solutions across 30+ years, working in diverse environments, and continuously adopting new technologies (Angular, TypeScript, cloud, automation, now AI). He thrives on solving complex problems and delivering real-world impact."
+    },
+    {
+      "question": "Describe your ideal work environment. Ideal work environment?",
+      "answer": "Joseph has succeeded in fast-paced, diverse environments including startups, blue-chip companies, and government. He works remotely at Hi Marine and has experience in offices (Cambridge, Boston, Norwood, etc.). His strengths include adapting to changing needs and managing multiple tasks. For preferences on team size, structure, or culture, contact him at Joe@bcjj.com or LinkedIn."
+    },
+    {
+      "question": "How do you prioritize tasks when everything is urgent? Prioritize tasks? Time management?",
+      "answer": "Joseph has strong planning skills and the ability to manage multiple tasks and adapt to changing needs. He has delivered under demanding conditions at DOT (multiple projects), John Hancock, CCS, and other fast-paced environments. Specific prioritization frameworks are not on the resume. For behavioral examples, contact him at Joe@bcjj.com or LinkedIn."
+    },
+    {
+      "question": "Tell me about a time you failed. Time you failed? Failure?",
+      "answer": "Joseph's resume does not describe specific failures. It emphasizes his track record of delivering solutions, adaptability, and strengths. For behavioral questions about setbacks and lessons learned, contact him directly at Joe@bcjj.com or LinkedIn."
+    },
+    {
+      "question": "Tell me about a time you showed leadership. Leadership? Led a team?",
+      "answer": "Joseph has held senior roles (Senior Software Engineer, Senior Programmer/Analyst) and delivered complex projects at DOT, John Hancock, CCS, and Hi Marine. He has planned, communicated, and driven outcomes in diverse team environments. Specific leadership examples are not detailed on the resume. For behavioral examples, contact him at Joe@bcjj.com or LinkedIn."
+    },
+    {
+      "question": "Describe a time you dealt with a difficult situation. Difficult situation?",
+      "answer": "Joseph has delivered in challenging contexts: government projects (NHTSA, UK MOD, AMC), actuarial systems at John Hancock, data cleansing at CCS, and UI Path automation for PARs. His resume emphasizes adaptability and strong problem-solving. For specific behavioral examples, contact him at Joe@bcjj.com or LinkedIn."
+    },
+    {
+      "question": "Why are you interested in this role? Interested in this role?",
+      "answer": "Joseph's resume states his next great challenge is becoming proficient at coding using AI. His experience (Angular, TypeScript, C#, web development, automation, government, finance) positions him for roles that value technical depth and adaptability. For role-specific fit, contact him at Joe@bcjj.com or LinkedIn."
+    },
+    {
+      "question": "How do you stay up-to-date with new technologies? Stay current? New tech?",
+      "answer": "Joseph has adapted across 30+ years—from early web and desktop tools to Angular, TypeScript, cloud (Azure), and automation (UI Path). His next focus is AI-assisted coding. He uses modern tools (VSCode/Cursor, Git, Azure DevOps) and has delivered in diverse technical environments, demonstrating continuous learning."
+    },
+    {
+      "question": "How do you balance shipping quickly with technical debt? Technical debt?",
+      "answer": "Joseph has delivered in fast-moving environments (government, finance, startups) and has experience with iterative development, Git, code review workflows, and Azure DevOps. Specific frameworks for balancing speed and technical debt are not on the resume. For process questions, contact him at Joe@bcjj.com or LinkedIn."
+    },
+    {
+      "question": "What's your process for reviewing code? Code review?",
+      "answer": "Joseph has used Git, Azure DevOps, and Team Foundation Server (TFS) for version control and collaboration. His technical summary includes experience with modern development workflows. Specific code review practices are not detailed on the resume. For process questions, contact him at Joe@bcjj.com or LinkedIn."
+    },
+    {
+      "question": "Describe your approach to debugging complex problems. Debugging?",
+      "answer": "Joseph has debugged and built complex systems: NHTSA crash data, UK MOD applications, actuarial models at John Hancock, UI Path automation for PARs, and data cleansing at CCS. He uses Visual Studio, VSCode/Cursor, SQL Server, and other debugging tools. For specific debugging examples, contact him at Joe@bcjj.com or LinkedIn."
+    },
+    {
+      "question": "Tell me about a time you fixed a critical production issue. Production issue? Outage?",
+      "answer": "Joseph has built and maintained production systems at DOT, John Hancock, CCS, Hi Marine, and others. Specific incident-response examples are not on the resume. For behavioral examples, contact him at Joe@bcjj.com or LinkedIn."
+    },
+    {
+      "question": "Describe a time you improved a process. Improved a process? Process improvement?",
+      "answer": "At DOT, Joseph built UI Path applications to automate downloading, scanning, and processing of Police Accident Reports—replacing manual workflows. At Gillette he migrated from DOS to modern systems and automated shave test analysis. At CCS he built data cleansing and dialing automation. For more examples, contact him at Joe@bcjj.com or LinkedIn."
+    },
+    {
+      "question": "Tell me about a time you made a data-driven decision. Data-driven decision?",
+      "answer": "Joseph has built data collection (NHTSA CDAN/CISS), actuarial models (John Hancock LTC rates), and data cleansing systems (CCS). He has turned raw data into business applications. Specific decision-making examples are not on the resume. For behavioral examples, contact him at Joe@bcjj.com or LinkedIn."
+    },
+    {
+      "question": "Explain a time you delivered under an unrealistic deadline. Unrealistic deadline? Tight deadline?",
+      "answer": "Joseph has delivered in fast-paced environments across government, finance, and product companies. His planning skills and adaptability have supported on-time delivery. Specific deadline examples are not on the resume. For behavioral examples, contact him at Joe@bcjj.com or LinkedIn."
+    },
+    {
+      "question": "Describe a time you went above and beyond. Above and beyond?",
+      "answer": "Joseph's resume highlights delivering solutions in demanding environments, building UI Path automation for PARs, developing NHTSA CISS, and working on multiple concurrent projects at DOT. Specific 'above and beyond' examples are not detailed. For behavioral examples, contact him at Joe@bcjj.com or LinkedIn."
+    },
+    {
+      "question": "What's the last thing you taught yourself? Taught yourself? Self-taught?",
+      "answer": "Joseph's stated next great challenge is becoming proficient at coding using AI. Over 30+ years he has self-directed learning across technologies: early web tools, Angular, TypeScript, cloud, UI Path, and now AI-assisted development. He uses VSCode/Cursor and stays current with modern tooling."
+    },
+    {
+      "question": "Tell me about a time you solved a problem without clear direction. Problem without direction? Ambiguity?",
+      "answer": "Joseph has worked on ambiguous, complex projects: UK MOD defense data, NHTSA CISS, actuarial systems at John Hancock, and UI Path automation for PARs. His strengths include adaptability and managing changing needs. Specific examples are not on the resume. For behavioral examples, contact him at Joe@bcjj.com or LinkedIn."
+    },
+    {
+      "question": "Explain a situation where you disagreed with your manager. Disagreed with manager?",
+      "answer": "Joseph's resume emphasizes excellent communication and interpersonal skills. Specific disagreement examples are not on the resume. For behavioral questions, contact him at Joe@bcjj.com or LinkedIn."
+    },
+    {
+      "question": "Tell me about a time you managed multiple responsibilities. Multiple responsibilities? Multitasking?",
+      "answer": "Joseph has managed multiple tasks and adapted to changing needs across 30+ years. At DOT he worked on UK MOD, NHTSA, AMC, and PARs projects. He has balanced overlapping roles (e.g., Virtual Research Associates while at John Hancock). His key strengths include managing multiple tasks effectively."
+    },
+    {
+      "question": "Describe a time you had to learn something fast. Learn something fast?",
+      "answer": "Joseph has adapted to new technologies throughout his career—from early web tools to Angular, TypeScript, cloud, and UI Path. His next focus is AI-assisted coding. He has a strong track record of delivering in changing technical environments. For specific examples, contact him at Joe@bcjj.com or LinkedIn."
+    },
+    {
+      "question": "Have you replaced manual processes with automation? Automation? Manual processes?",
+      "answer": "Yes. At the U.S. Dept. of Transportation, Joseph built UI Path applications to download, scan, and digitize Police Accident Reports (PARs), replacing manual workflows. At Gillette he automated shave test analysis and migrated from DOS. At CCS he built data cleansing and click-to-dial automation. He has strong automation experience."
+    },
+    {
+      "question": "How do you use AI tools to improve your work? Use AI? AI tools?",
+      "answer": "Joseph's next great challenge is becoming proficient at coding using AI. He uses VSCode/Cursor (an AI-assisted IDE) and is actively growing in AI-assisted development. His resume positions him to integrate AI tools into his workflow while delivering in web and software development."
+    },
+    {
+      "question": "Agile experience? Scrum? Iterative development?",
+      "answer": "Joseph has delivered in fast-paced, iterative environments at DOT, Hi Marine, John Hancock, and CCS. He uses Git, Azure DevOps, and modern development workflows. Specific Agile/Scrum certifications or frameworks are not on the resume. For process details, contact him at Joe@bcjj.com or LinkedIn."
+    },
+    {
+      "question": "Do you have a portfolio? GitHub? Code samples?",
+      "answer": "Joseph's resume does not list a public portfolio or GitHub. He has built applications at Hi Marine (GitHub), DOT (Git, Azure DevOps), and other employers. For code samples or portfolio access, contact him at Joe@bcjj.com or LinkedIn."
+    },
+    {
+      "question": "Are you willing to relocate? Relocate? Relocation?",
+      "answer": "Joseph's current role at Hi Marine is remote. He is based in the Boston Area, MA. Relocation preferences are not on the resume. For location or travel preferences, contact him at Joe@bcjj.com or LinkedIn."
+    },
+    {
+      "question": "When can you start? Start date? Availability?",
+      "answer": "Joseph's resume does not specify start date or availability. He is currently a contractor at Hi Marine (January 2025 – present). For availability, contact him at Joe@bcjj.com or LinkedIn."
+    },
+    {
+      "question": "Do you require sponsorship? Visa? Work authorization?",
+      "answer": "Joseph's resume does not address visa or sponsorship. For work authorization questions, contact him directly at Joe@bcjj.com or LinkedIn."
+    },
+    {
+      "question": "References? Can I contact your references?",
+      "answer": "Joseph's resume does not include references. For references or recommendations, contact him at Joe@bcjj.com or LinkedIn."
+    },
+    {
+      "question": "Tell me about a situation where you had to persuade someone. Persuade someone?",
+      "answer": "Joseph's resume emphasizes excellent communication and interpersonal skills. He has collaborated with stakeholders at DOT, John Hancock, and elsewhere. Specific persuasion examples are not on the resume. For behavioral examples, contact him at Joe@bcjj.com or LinkedIn."
+    },
+    {
+      "question": "How would you adapt if part of your job became automated? AI automation?",
+      "answer": "Joseph has embraced automation: he built UI Path applications to automate PARs processing and has automated workflows at Gillette and CCS. His next great challenge is AI-assisted coding. He views automation as an opportunity to focus on higher-value work and is actively growing in AI to stay ahead."
+    },
+    {
+      "question": "What questions do you have for us? Questions for interviewer?",
+      "answer": "Joseph's resume does not list specific questions for interviewers. For role-specific or company-specific questions he would ask, contact him at Joe@bcjj.com or LinkedIn to arrange a conversation."
+    }
+  ]
+}

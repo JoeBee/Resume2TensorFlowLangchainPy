@@ -1,0 +1,393 @@
+{
+  "profile": {
+    "name": "Joseph H. Beyer",
+    "address": "Boston Area, MA",
+    "email": "Joe@bcjj.com",
+    "phone": "978.273.0215",
+    "linkedin": "www.linkedin.com/in/joseph-beyer-6148171",
+    "image": "assets/JoeProfile_sm2.jpg"
+  },
+  "summary": {
+    "technical_skills_experience": [
+      "30+ years of experience in web development, IT, and communication.",
+      "Proficient in web technologies (Angular v1.9, JavaScript, TypeScript, etc.) and software development tools (Visual Studio, VSCode/Cursor, Git).",
+      "Proven track record of delivering solutions in fast-paced and diverse environments (startups, blue-chip companies, government)."
+    ],
+    "next_great_challenge": "Becoming proficient coding utilizing artificial intelligence (AI).",
+    "key_strengths": [
+      "Excellent planning, communication, and interpersonal skills.",
+      "Strong ability to manage multiple tasks and adapt to changing needs."
+    ],
+    "hobbies": [
+      "Astronomy",
+      "Speed chess with friends and family",
+      "Former (multi-)marathon runner",
+      "Pickleball"
+    ]
+  },
+  "technical_summary": {
+    "web_languages": [
+      "Angular v1.9/AngularJS/JavaScript/JQuery/Typescript",
+      "C#",
+      "HTML",
+      "CSS",
+      "T-SQL",
+      "VB.NET/VBScript/VBA",
+      "ASP/ASP.NET Web API/RESTful Services",
+      "Material Design",
+      "UI Path",
+      "Git",
+      "Azure"
+    ],
+    "software": [
+      "Many web development tools",
+      "Visual Studio",
+      "VSCode",
+      "Team Foundation Server (TFS)",
+      "GIT",
+      "SQL Server",
+      "Proficient in numerous Microsoft and Windows products"
+    ]
+  },
+  "education": [
+    {
+      "degree": "Master of Science in Scientific Computing",
+      "school": "University of Mass. at Lowell",
+      "date": "January 1993",
+      "address": "220 Pawtucket St, Lowell, MA 01854",
+      "gpa": "Graduated with 3.6/4.0 GPA"
+    },
+    {
+      "degree": "Bachelor of Arts in Mathematics",
+      "school": "Boston University",
+      "date": "June 1991",
+      "address": "233 Bay State Road, Boston, MA 02215",
+      "notes": "Dean's List 1990 to 1991"
+    }
+  ],
+  "professional_experience": [
+    {
+      "company": "Hi Marine Company - Remote",
+      "role": "Contractor",
+      "date": "January 2025 – Present",
+      "tech": [
+        "Angular v1.9",
+        "Typescript",
+        "Material Design",
+        "Javascript",
+        "Github"
+      ],
+      "tasks": [
+        "Developed a web-based Angular application with Material Design components, integrating the MarineTraffic.com API to enable users to manage ships and fleets."
+      ]
+    },
+    {
+      "company": "U.S. Dept. of Transportation - 55 Broadway, Cambridge, MA",
+      "role": "Subcontractor with various companies listed below",
+      "date": "October 2013 – January 2025",
+      "title": "Senior Software Engineer",
+      "tech": [
+        "Angular v1.8",
+        "Typescript",
+        "Javascript",
+        "C#",
+        "Visual Studio",
+        "UI Path",
+        "Git",
+        "Azure DevOps"
+      ],
+      "projects": [
+        {
+          "name": "UK Ministry of Defence (UK MOD)",
+          "description": "Developed applications for defense data."
+        },
+        {
+          "name": "US Air Mobility Command (AMC)",
+          "description": "Created application to read, parse and store streamed cargo data."
+        },
+        {
+          "name": "NHTSA Crash Data Acquisition Network (CDAN)",
+          "description": "Developed web-based data collection application collecting data for NHTSA's Crash Data Acquisition Network (CDAN). The new Crash Investigation Sampling System (CISS) can replace the National Automotive Sampling System (NASS)."
+        },
+        {
+          "name": "Police Accident Reports (PARs)",
+          "description": "Constructed UI Path application(s) to download and scan Police Accident Reports (PARs), scraping, making digital and uploading to accessible servers for analysis."
+        }
+      ]
+    },
+    {
+      "company": "The CCS Companies",
+      "address": "725 Canton St, Norwood, MA 02062",
+      "date": "December 2009 – October 2013",
+      "title": "Senior Programmer/Analyst",
+      "tech": [
+        "C#",
+        "VB6/VB.NET",
+        "Web-Services",
+        "Win. applications",
+        "T-SQL/SQL Server",
+        "VS.NET/Visual Studio",
+        "C# Express",
+        "XML",
+        "COM Interop",
+        "LINQ/Lambda",
+        "LINQ to SQL",
+        "Entity Framework"
+      ],
+      "tasks": [
+        "Applications to email users, parse and analyze bounce-back data; data cleansing for phone-dialing.",
+        "Web app utilizing 3rd party plugin enabling agents to click on phone numbers and dial customers."
+      ]
+    },
+    {
+      "company": "John Hancock Financial",
+      "address": "200 Berkeley St #1, Boston, MA 02116",
+      "date": "April 2005 – November 2009",
+      "title": "Software Developer",
+      "tech": [
+        "C#",
+        "VB6/VB.NET",
+        "ASP.NET",
+        "ADO.NET",
+        "Adobe PDF",
+        "Web-Services",
+        "T-SQL/SQL Server",
+        "VS.NET (Visual Studio 2003/2005)",
+        "Data Dynamics ActiveReports",
+        "CSS",
+        "XML",
+        "Active-X",
+        "COM"
+      ],
+      "tasks": [
+        "Coded mathematical/actuarial models to generate and present Long Term Care insurance rates."
+      ]
+    },
+    {
+      "company": "Virtual Research Associates (VRA)",
+      "address": "22 Georgian Rd, Weston, MA 02493",
+      "date": "2007/2008",
+      "title": "Software Engineer (Part-time while at John Hancock)",
+      "tech": [
+        "C#",
+        "VB6",
+        "ASP.NET",
+        "ADO.NET",
+        "T-SQL/SQL Server 2005",
+        "VS.NET 2005"
+      ],
+      "tasks": [
+        "Joint Research Centre (Part of the European Commission/European Union) in Ispra Italy to consult with members of the African union regarding integrating software systems.",
+        "Migrated antiquated VB/ASP code to C#/.NET SQL Server, wrote email/PST parsing application."
+      ]
+    },
+    {
+      "company": "OneSource, Inc.",
+      "address": "300 Baker Ave. Ste 303, Boston Area, MA",
+      "date": "Sept 2004 – April 2005",
+      "title": "Senior Software Engineer",
+      "tech": [
+        "C#",
+        "ASP.NET",
+        "Adobe PDF",
+        "Web-Services",
+        "T-SQL/SQL Server",
+        "VS.NET (Visual Studio Enterprise Developer 2003)",
+        "ASP",
+        "VB"
+      ],
+      "tasks": [
+        "Applications to transfer data into XML, save to SQL Server. Adobe plugin to generate XML from PDFs."
+      ]
+    },
+    {
+      "company": "Fidelity Investments",
+      "address": "1 Spartan Way, Merrimack, NH 03054",
+      "date": "July 2003 – Dec. 2003 & Feb. 2004 – Sept. 2004",
+      "title": "Web Developer – Contractor",
+      "tech": [
+        "C#",
+        "Win-Forms/Web-Forms .NET Smart Client",
+        "SQL",
+        "VS.NET",
+        "ASP/ASP.NET",
+        "VB"
+      ],
+      "tasks": [
+        "Maintained brokerage applications; .NET Smart Client; Web services for setting up Fidelity Accounts; Web services for setting up Fidelity Accounts."
+      ]
+    },
+    {
+      "company": "Surebridge Inc.",
+      "address": "8 Commerce Park N, Bedford, NH 03110",
+      "date": "December 2003 – February 2004",
+      "title": "NET Developer – Contractor",
+      "tech": [
+        "C#/JavaScript",
+        "SQL Server",
+        "WebForms",
+        ".NET SQL",
+        "VS.NET",
+        "ASP",
+        "VB"
+      ],
+      "tasks": [
+        "Web site for a promotional product company."
+      ]
+    },
+    {
+      "company": "Systems Engineering Inc.",
+      "address": "657 Main Street, Waltham, MA 02451",
+      "date": "March 2003 – June 2003",
+      "title": "Software Engineer – Contractor",
+      "tech": [
+        "COM",
+        "ASP",
+        "SQL Server",
+        "ADO",
+        "MS Interdev",
+        "VB/VBScript",
+        "VSS",
+        "JavaScript"
+      ],
+      "tasks": [
+        "Data entry and reporting application for the Massachusetts Dept. of Mental Retardation (DMR)."
+      ]
+    },
+    {
+      "company": "Optasite",
+      "address": "41 Sequin Drive, Glastonbury, CT 06033",
+      "date": "February 2002 – March 2003",
+      "title": "Software Engineer",
+      "tech": [
+        "Visual Basic (VB)",
+        "ADO",
+        "VB.NET",
+        "ASP.NET",
+        "Visual Studio.NET",
+        "COM",
+        "Oracle",
+        "Visual Source Safe (VSS)",
+        "Crystal Reports/Report Designer Component (RDC)"
+      ],
+      "tasks": [
+        "Built applications for facilitating and maintaining cell tower field data."
+      ]
+    },
+    {
+      "company": "Cahners / eLogic",
+      "address": "1 Vieweic Center, Cambridge, MA",
+      "date": "March 2000 – September 2001",
+      "title": "Application and Web Developer",
+      "tech": [
+        ".NET/ASPX",
+        "ASP",
+        "Visual Basic",
+        "COM",
+        "Visual Basic for Applications (VBA)",
+        "SQL Server 7.0/MS Access",
+        "XML",
+        "XSLT",
+        "MS InterPress",
+        "Visual Studio .NET",
+        "JavaScript",
+        "MAPI",
+        "MS Excel",
+        "HTML"
+      ],
+      "tasks": [
+        "XML/XSLT content migration, XML/DTD validation, web-based bug tracking application; On-line management of Cahner's magazines including customer demonstrations."
+      ]
+    },
+    {
+      "company": "Phase Forward",
+      "address": "1440 Main Street, Waltham, MA 02451-1623",
+      "date": "October 1999 – March 2000",
+      "title": "Application Engineer",
+      "tech": [
+        "Visual Basic Scripting",
+        "Visual Basic for Applications",
+        "XML",
+        "MS Excel",
+        "HTML",
+        "NT 4.0"
+      ],
+      "tasks": [
+        "Designed and developed, through extensive customer interaction, the InForm software application."
+      ]
+    },
+    {
+      "company": "The Gillette Company",
+      "address": "One Gillette Park, Boston, MA 02127",
+      "date": "October 1994 – October 1999",
+      "title": "Programmer / Information Analyst",
+      "tech": [
+        "Visual Basic",
+        "Visual Basic for Applications",
+        "MS Excel",
+        "MS Access",
+        "Teleform and Softex scanning software",
+        "DOS/Win9x",
+        "HP Scanners",
+        "Math/Statistics"
+      ],
+      "tasks": [
+        "Migrated department from DOS applications and hardware to 'modern' systems; Automated shave test analysis using statistical 'best fit'; implemented a telephone data-retrieval system."
+      ]
+    },
+    {
+      "company": "The Boston Globe",
+      "address": "1 Exchange Place, Suite 201, Boston, MA 02109-2132",
+      "date": "May 1999 – Sept. 1999",
+      "title": "Programmer – Consultant (Part-time while at Gillette)",
+      "tech": [
+        "Visual Basic",
+        "FTP",
+        "Active-X",
+        "Adobe PhotoShop"
+      ],
+      "tasks": [
+        "Developed photographic application for field photographers to manage and transmit images."
+      ]
+    },
+    {
+      "company": "Boston College High School",
+      "address": "150 Morrissey Blvd, Boston, MA 02125",
+      "date": "September 1993 – June 1994",
+      "title": "Math/Computer Teacher",
+      "tech": [
+        "Pascal",
+        "Trigonometry/Advanced Mathematics",
+        "Geometry",
+        "Algebra"
+      ],
+      "tasks": [
+        "Taught math and computer science."
+      ]
+    },
+    {
+      "company": "Process Design Sciences",
+      "address": "Chelmsford, MA",
+      "date": "Dec '92 - Sept '93 and June '94 - Oct '94",
+      "title": "Programmer / Analyst",
+      "tech": [
+        "MicroCal Origin",
+        "Foxpro",
+        "SQL"
+      ],
+      "tasks": [
+        "Utilizing higher math and query tools quantified 'work process flow' in the insurance industry."
+      ]
+    }
+  ],
+  "additional_training_education": [
+    "Microsoft Certified Professional 2.0 (MCP)",
+    "Microsoft Certified Application Developer (MCAD)",
+    "Microsoft Certified Technology Specialist (MCTS)",
+    "Microsoft Certified Professional Developer (MCPD)",
+    "Microsoft Exams 70-315, 70-316, 70-320, 70-528, 70-536, 70-547",
+    "Long Term Care Insurance - LTC Basics (July, 2005)",
+    "Long Term Care Insurance - Financing Long-Term Care Needs: Exploring Options and Reaching Solutions (October, 2005)",
+    "Long Term Care Insurance - Long-Term Care Insurance Product: Policy Design, Pricing, and Regulation (February, 2006)"
+  ]
+}
