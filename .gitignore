@@ -125,6 +125,8 @@ events.out.tfevents.*
 
 # LangChain / ChromaDB / vector stores
 chroma_data/
+data/chroma_db/
+data/chroma_db_v2/
 *.chroma
 vector_store/
 
