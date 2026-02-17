@@ -4,61 +4,137 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <title>Joseph H. Beyer — Resume</title>
   <style>
     :root {
       --bg: #0f1419;
+      --bg-gradient: linear-gradient(180deg, #131a22 0%, #0f1419 20%);
       --surface: #1a2332;
+      --surface-hover: #1f2a3a;
       --text: #e6edf3;
       --muted: #8b949e;
       --accent: #58a6ff;
+      --accent-soft: rgba(88, 166, 255, 0.15);
       --border: #30363d;
+      --transition: 0.2s ease;
     }
     * { box-sizing: border-box; }
+    html { overflow-x: hidden; }
     body {
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      background: var(--bg);
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg-gradient);
+      background-attachment: fixed;
       color: var(--text);
-      line-height: 1.6;
+      line-height: 1.65;
       max-width: 900px;
       margin: 0 auto;
-      padding: 2rem 1.5rem;
+      padding: 2.5rem 1.5rem;
+      overflow-x: hidden;
+      word-wrap: break-word;
     }
-    h1 { font-size: 1.75rem; margin: 0 0 0.5rem; }
-    h2 { font-size: 1.15rem; color: var(--accent); margin: 1.5rem 0 0.5rem; border-bottom: 1px solid var(--border); padding-bottom: 0.25rem; }
-    .profile { margin-bottom: 1.5rem; }
+    h1, h2 { font-family: 'DM Sans', sans-serif; }
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.35rem;
+    }
+    .tagline {
+      font-size: 1rem;
+      color: var(--muted);
+      font-weight: 500;
+      margin: 0 0 0.75rem;
+    }
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin: 2.5rem 0 0.75rem;
+      padding-left: 0.75rem;
+      border-left: 3px solid var(--accent);
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    h2:first-of-type { margin-top: 0; }
+    .profile {
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
     .profile-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 1.5rem;
+      gap: 2rem;
     }
     .profile-info { flex: 1; min-width: 0; }
-    .profile .contact { color: var(--muted); font-size: 0.9rem; }
-    .profile .contact a { color: var(--accent); text-decoration: none; }
-    .profile .contact a:hover { text-decoration: underline; }
+    .profile .contact {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .profile .contact a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color var(--transition);
+    }
+    .profile .contact a:hover { color: #79b8ff; }
     .profile-photo {
       width: 120px;
       height: 120px;
       border-radius: 50%;
       object-fit: cover;
       flex-shrink: 0;
-      border: 3px solid var(--border);
+      border: 2px solid rgba(88, 166, 255, 0.4);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     }
     ul { padding-left: 1.25rem; margin: 0.25rem 0; }
+    .section { margin-bottom: 0.5rem; }
     .section ul { margin: 0.5rem 0; }
-    .job { margin: 1rem 0; padding: 0.75rem; background: var(--surface); border-radius: 8px; border: 1px solid var(--border); }
-    .job .company { font-weight: 600; color: var(--accent); }
+    .job {
+      margin: 1.25rem 0;
+      padding: 1rem 1.25rem;
+      background: var(--surface);
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      transition: background var(--transition), border-color var(--transition);
+    }
+    .job:hover {
+      background: var(--surface-hover);
+      border-color: rgba(88, 166, 255, 0.3);
+    }
+    .job .company { font-weight: 600; color: var(--accent); font-size: 1.05rem; }
     .job .role, .job .date { color: var(--muted); font-size: 0.9rem; }
-    .job .tech { font-size: 0.85rem; color: var(--muted); margin-top: 0.25rem; }
-    .project { margin: 0.5rem 0; padding-left: 0.5rem; border-left: 2px solid var(--border); }
+    .tech-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.6rem;
+    }
+    .tech-pill {
+      display: inline-block;
+      padding: 0.25rem 0.6rem;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+    .project {
+      margin: 0.6rem 0;
+      padding: 0.5rem 0 0.5rem 0.75rem;
+      border-left: 2px solid var(--border);
+    }
     .project .name { font-weight: 600; }
     .qa-box {
-      margin: 0 0 1rem;
-      padding: 0.5rem 0.75rem;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 6px;
+      margin: 2rem 0;
+      padding: 1rem 1.25rem;
+      background: rgba(19, 47, 76, 0.5);
+      border: 1px solid rgba(30, 73, 118, 0.6);
+      border-radius: 10px;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -70,34 +146,54 @@
     #ask-input {
       flex: 1;
       min-width: 0;
-      padding: 0.4rem 0.6rem;
+      padding: 0.5rem 0.75rem;
       background: var(--bg);
       border: 1px solid var(--border);
-      border-radius: 4px;
+      border-radius: 6px;
       color: var(--text);
       font-size: 0.9rem;
+      transition: border-color var(--transition);
     }
     #ask-input:focus { outline: none; border-color: var(--accent); }
     #ask-btn {
-      padding: 0.4rem 0.75rem;
+      padding: 0.5rem 1rem;
       background: var(--accent);
       color: var(--bg);
       border: none;
-      border-radius: 4px;
+      border-radius: 6px;
       font-weight: 600;
       font-size: 0.9rem;
       cursor: pointer;
       flex-shrink: 0;
+      transition: opacity var(--transition), transform var(--transition);
     }
-    #ask-btn:hover { opacity: 0.9; }
-    #ask-btn:disabled { opacity: 0.6; cursor: not-allowed; }
-    #answer { margin-top: 0.25rem; padding: 0.5rem 0.6rem; background: var(--bg); border-radius: 4px; white-space: pre-wrap; min-height: 1.5rem; font-size: 0.9rem; flex-basis: 100%; }
+    #ask-btn:hover { opacity: 0.9; transform: translateY(-1px); }
+    #ask-btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+    #answer {
+      margin-top: 0.5rem;
+      padding: 0.75rem;
+      background: var(--bg);
+      border-radius: 6px;
+      white-space: pre-wrap;
+      min-height: 1.5rem;
+      font-size: 0.9rem;
+      flex-basis: 100%;
+    }
     #answer.loading { color: var(--muted); }
     #answer.error { color: #f85149; }
-    .achievement-category { margin: 0.75rem 0; }
+    .achievement-category { margin: 1rem 0; }
     .achievement-category .cat-name { font-weight: 600; color: var(--accent); }
-    .tech-category { margin: 0.5rem 0; }
-    .tech-category .cat-name { font-weight: 600; color: var(--muted); font-size: 0.9rem; }
+    .tech-category { margin: 0.75rem 0; }
+    .tech-category .cat-name { font-weight: 600; color: var(--muted); font-size: 0.9rem; margin-bottom: 0.25rem; display: block; }
+    .tech-category .tech-pills { margin-top: 0.25rem; }
+    @media print {
+      body { background: #fff; color: #111; }
+      .profile-photo { border-color: #ccc; box-shadow: none; }
+      .job { background: #f8f9fa; border-color: #dee2e6; }
+      .qa-box { border: 1px solid #dee2e6; background: #f8f9fa; }
+      .tech-pill { background: #e9ecef; color: #495057; }
+      a { color: #0066cc; }
+    }
   </style>
 </head>
 <body>
@@ -123,6 +219,10 @@
       if (!items || !items.length) return '';
       return '<ul>' + items.map(i => '<li>' + (typeof i === 'string' ? i : i.join ? i.join(', ') : JSON.stringify(i)) + '</li>').join('') + '</ul>';
     }
+    function renderPills(items) {
+      if (!items || !items.length) return '';
+      return '<div class="tech-pills">' + items.map(t => '<span class="tech-pill">' + (typeof t === 'string' ? t : t) + '</span>').join('') + '</div>';
+    }
 
     function renderResume(data) {
       const p = data.profile || {};
@@ -136,6 +236,7 @@
       let html = '<div class="profile"><div class="profile-header">';
       html += '<div class="profile-info">';
       html += '<h1>' + (p.name || '') + '</h1>';
+      if (p.tagline) html += '<div class="tagline">' + p.tagline + '</div>';
       html += '<div class="contact">';
       if (p.address) html += p.address + ' &middot; ';
       if (p.email) html += '<a href="mailto:' + p.email + '">' + p.email + '</a> &middot; ';
@@ -158,7 +259,7 @@
       if (Object.keys(ts).length) {
         html += '<h2>Technical summary</h2><div class="section">';
         for (const [cat, items] of Object.entries(ts)) {
-          if (items && items.length) html += '<div class="tech-category"><span class="cat-name">' + cat.replace(/_/g, ' ') + ':</span>' + renderList(items) + '</div>';
+          if (items && items.length) html += '<div class="tech-category"><span class="cat-name">' + cat.replace(/_/g, ' ') + '</span>' + renderPills(items) + '</div>';
         }
         html += '</div>';
       }
@@ -182,7 +283,7 @@
         html += '<div class="job">';
         html += '<div class="company">' + (job.company || '') + '</div>';
         html += '<div class="role">' + (job.role || job.title || '') + ' &mdash; ' + (job.date || '') + '</div>';
-        if (job.tech && job.tech.length) html += '<div class="tech">' + job.tech.join(', ') + '</div>';
+        if (job.tech && job.tech.length) html += renderPills(job.tech);
         if (job.tasks && job.tasks.length) html += renderList(job.tasks);
         if (job.projects && job.projects.length) {
           job.projects.forEach(proj => {
@@ -194,7 +295,7 @@
       html += '</div>';
 
       if (training && training.length) {
-        html += '<h2>Additional training</h2><div class="section">' + renderList(training) + '</div>';
+        html += '<h2>Additional training</h2><div class="section">' + renderPills(training) + '</div>';
       }
 
       resumeRestEl.innerHTML = html;
