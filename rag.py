@@ -156,6 +156,15 @@ Keep answers concise and professional. If the question is off-topic or inappropr
 _chain = None
 
 
+def warmup() -> None:
+    """Pre-load the RAG chain at startup so the first /api/ask request doesn't timeout (TensorFlow + Chroma load is slow)."""
+    global _chain
+    if _chain is None:
+        api_key = os.environ.get("GOOGLE_API_KEY") or os.environ.get("GEMINI_API_KEY")
+        if api_key and api_key.strip() and api_key != "your-gemini-key-here":
+            _chain = get_rag_chain()
+
+
 def answer_question(question: str) -> str:
     """Answer a question using the RAG chain (full resume + LLM)."""
     global _chain

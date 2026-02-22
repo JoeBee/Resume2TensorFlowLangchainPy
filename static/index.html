@@ -306,6 +306,9 @@
       .then(renderResume)
       .catch(() => { resumeEl.innerHTML = '<p>Could not load resume.</p>'; resumeRestEl.innerHTML = ''; });
 
+    // Pre-load RAG chain when page loads (takes 1–3 min first time; Ask will be faster)
+    fetch('/api/warmup').catch(() => {});
+
     askBtn.addEventListener('click', function () {
       const q = askInput.value.trim();
       if (!q) return;
@@ -318,7 +321,12 @@
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ question: q })
       })
-        .then(r => r.json().then(data => ({ ok: r.ok, data })))
+        .then(async (r) => {
+          const text = await r.text();
+          let data;
+          try { data = text ? JSON.parse(text) : {}; } catch { data = { detail: `Server returned non-JSON (status ${r.status})` }; }
+          return { ok: r.ok, status: r.status, data };
+        })
         .then(({ ok, data }) => {
           if (ok) {
             answerEl.textContent = data.answer || '';
@@ -328,8 +336,8 @@
             answerEl.className = 'error';
           }
         })
-        .catch(() => {
-          answerEl.textContent = 'Network or server error. Is the server running and GOOGLE_API_KEY (Gemini) set?';
+        .catch((err) => {
+          answerEl.textContent = err.message || 'Network error. Check the server and GOOGLE_API_KEY.';
           answerEl.className = 'error';
         })
         .finally(() => { askBtn.disabled = false; });

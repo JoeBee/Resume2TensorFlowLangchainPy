@@ -2,6 +2,7 @@
 Resume website: serves abbreviated resume and RAG-based Q&A using full resume + LangChain + TensorFlow.
 """
 import json
+import os
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException
@@ -15,7 +16,7 @@ from dotenv import load_dotenv
 _project_root = Path(__file__).resolve().parent
 load_dotenv(_project_root / ".env")
 
-from rag import answer_question
+from rag import answer_question, warmup
 
 app = FastAPI(title="Resume & Q&A", description="Resume display with AI Q&A over full resume data.")
 
@@ -63,6 +64,23 @@ def ask(req: AskRequest):
 @app.get("/api/health")
 def health():
     return {"status": "ok"}
+
+
+@app.get("/api/status")
+def status():
+    """Report whether Q&A is configured (for debugging deployment). Does not expose the key."""
+    api_key = os.environ.get("GOOGLE_API_KEY") or os.environ.get("GEMINI_API_KEY")
+    return {"status": "ok", "q_and_a_configured": bool(api_key and api_key.strip() and api_key != "your-gemini-key-here")}
+
+
+@app.get("/api/warmup")
+def api_warmup():
+    """Pre-load the RAG chain so the first Ask is fast. Call when the page loads."""
+    try:
+        warmup()
+        return {"status": "ok", "ready": True}
+    except Exception as e:
+        raise HTTPException(status_code=503, detail=str(e))
 
 
 @app.get("/favicon.ico")

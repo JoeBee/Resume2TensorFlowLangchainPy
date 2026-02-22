@@ -33,6 +33,27 @@ uvicorn main:app --reload
 
 Open [http://127.0.0.1:8000](http://127.0.0.1:8000). You’ll see the abbreviated resume and an “Ask a question” section. The first question may take a bit longer (TensorFlow model and Chroma index are built once).
 
+## Deploy to Google Cloud Run
+
+Deploy with `GOOGLE_API_KEY` from `.env` (never copied into the image):
+
+**Windows (PowerShell):**
+```powershell
+.\deploy.ps1
+```
+
+**Linux/macOS:**
+```bash
+chmod +x deploy.sh && ./deploy.sh
+```
+
+Optional: override project, region, or service name:
+```powershell
+.\deploy.ps1 -Project my-project -Region us-east1 -ServiceName my-resume
+```
+
+Prerequisites: [gcloud CLI](https://cloud.google.com/sdk/docs/install) installed and authenticated (`gcloud auth login`). The script builds from source and deploys with `GOOGLE_API_KEY` set as an environment variable on the Cloud Run service.
+
 ## Project layout
 
 - `data/resume-full.json` – Full resume (RAG source).
